@@ -118,8 +118,20 @@ def productos_editar_datos(codigo):
         stock=request.form['ProStock']
         cursor.execute("update productos set ProNombre=%s, ProDescripcion=%s, ProPrecio=%s, ProCosto=%s, ProStock=%s where ProCodigo=%s", (nombre, descripcion, precio, costo, stock, codigo))
         conn.commit()
+        
         return redirect(url_for('productos_index'))
-    
+@app.route("/productos/eliminar/<string:codigo>", methods=["GET", "POST"])
+def productos_eliminar_datos(codigo):
+    if request.method == 'GET':
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM productos where ProCodigo=%s", (codigo,))
+        producto = cursor.fetchone()
+        return render_template('/productos/eliminar.html', producto=producto)
+    elif request.method == 'POST':
+        cursor = conn.cursor()
+        cursor.execute("DELETE FROM productos WHERE ProCodigo=%s", (codigo,))
+        conn.commit()
+        return redirect(url_for('productos_index'))
 
 
 
