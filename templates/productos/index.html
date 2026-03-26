@@ -21,11 +21,11 @@
             <th>stock</th>
         </thead>
         <tbody>
-            {% for producto in lista_productos%}
+           {% for producto in lista_productos%}
                 <tr>
                     <td>
-                        <a href="/productos/editar/{{productos.0}}">Editar</a>
-                        <a href="/productos/eliminar/{{productos.0}}">Eliminar</a>
+                        <a href="/productos/editar/{{producto.0}}">Editar</a>
+                        <a href="/productos/eliminar/{{producto.0}}">Eliminar</a>
                     </td>
                     <td>{{producto.0}}</td>
                     <td>{{producto.1}}</td>
@@ -34,7 +34,7 @@
                     <td>{{producto.4}}</td>
                     <td>{{producto.5}}</td>
              </tr>
-            {% endfor %} 
+            {% endfor %}
         </tbody>
     </table>
 
