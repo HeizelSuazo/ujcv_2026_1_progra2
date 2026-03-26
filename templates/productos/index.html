@@ -24,8 +24,8 @@
             {% for producto in lista_productos%}
                 <tr>
                     <td>
-                        <a href="">Editar</a>
-                        <a href="">Eliminar</a>
+                        <a href="/productos/editar/{{productos.0}}">Editar</a>
+                        <a href="/productos/eliminar/{{productos.0}}">Eliminar</a>
                     </td>
                     <td>{{producto.0}}</td>
                     <td>{{producto.1}}</td>
