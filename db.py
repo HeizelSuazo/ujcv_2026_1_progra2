@@ -5,6 +5,6 @@ def get_connection():
         host='localhost',
         user='root',
         password='',
-        database='ujcv_2026_2_progra2',
+        database='ujcv_2026_1_progra2',
         ssl_disabled=True  # Desactiva SSL
     )
