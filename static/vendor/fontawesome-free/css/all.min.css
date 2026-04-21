@@ -1,0 +1,78 @@
+.fa,
+.fas,
+.far,
+.fab {
+  display: inline-block;
+  font-family: "bootstrap-icons" !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-fw {
+  width: 1.25em;
+  text-align: center;
+}
+
+.fa::before,
+.fas::before,
+.far::before,
+.fab::before {
+  display: inline-block;
+}
+
+.fa-tachometer-alt::before {
+  content: "\f2ea";
+}
+
+.fa-cog::before,
+.fa-cogs::before {
+  content: "\f3e5";
+}
+
+.fa-search::before {
+  content: "\f52a";
+}
+
+.fa-bell::before {
+  content: "\f18a";
+}
+
+.fa-file-alt::before {
+  content: "\f38b";
+}
+
+.fa-donate::before {
+  content: "\f64d";
+}
+
+.fa-exclamation-triangle::before {
+  content: "\f33a";
+}
+
+.fa-envelope::before {
+  content: "\f32f";
+}
+
+.fa-user::before {
+  content: "\f4da";
+}
+
+.fa-list::before {
+  content: "\f479";
+}
+
+.fa-sign-out-alt::before {
+  content: "\f1c3";
+}
+
+.fa-angle-up::before {
+  content: "\f286";
+}
+
+.fa-bars::before {
+  content: "\f479";
+}
